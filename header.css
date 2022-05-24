@@ -18,10 +18,31 @@
           box-sizing: border-box;
 }
 
-.menu-burger {
+.logo-burger .menu-burger-wrapper .menu-burger span {
+  display: block;
   height: 22px;
   width: 30px;
   background-image: url("./images/burger.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-burger .logo-wrapper .logo {
+  width: 145px;
+  height: 31px;
+}
+
+.logo-burger .logo-wrapper .logo a img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-wrapper .search {
+  height: 26px;
+  width: 26px;
+  background-image: url("./images/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=header.css.map */
