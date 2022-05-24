@@ -1,6 +1,6 @@
 :root {
-  --ff-regular: 'Century Gothic Regular', sans-serif;
-  --ff-bold: 'Century Gothic Bold', sans-serif;
+  --ff-regular: "Century Gothic Regular", sans-serif;
+  --ff-bold: "Century Gothic Bold", sans-serif;
 
   --col-black: #000000;
   --col-white: #ffffff;
@@ -19,10 +19,10 @@
 }
 
 .menu-burger {
+  height: 22px;
+  width: 30px;
+  background-image: url("./images/burger.png");
+  background-size: cover;
   span {
-    height: 22px;
-    width: 30px;
-    background-image: url('./images/burger.png');
-    background-size: cover;
   }
 }
