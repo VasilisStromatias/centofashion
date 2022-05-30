@@ -1,6 +1,6 @@
 :root {
-  --ff-regular: "Century Gothic Regular", sans-serif;
-  --ff-bold: "Century Gothic Bold", sans-serif;
+  --ff-regular: 'Century Gothic Regular', sans-serif;
+  --ff-bold: 'Century Gothic Bold', sans-serif;
   --col-black: #000000;
   --col-white: #ffffff;
   --col-grey: #a2a2a2;
@@ -34,12 +34,20 @@ header {
   position: relative;
 }
 
+header .active {
+  left: 0 !important;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+}
+
 header .submenu {
   display: block;
   position: absolute;
   overflow: hidden;
-  left: 0;
-  background-color: #a2a2a2;
+  left: -20%;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  background-color: whitesmoke;
   width: 19.5%;
   height: 100vh;
   padding-inline: 50px 23px;
@@ -75,6 +83,7 @@ header .submenu .submenu-list .close-icon {
 }
 
 header .submenu .submenu-list .close-icon span {
+  cursor: pointer;
   display: block;
   background-image: url(./images/close_icon.png);
   background-repeat: no-repeat;
@@ -247,7 +256,7 @@ header .header-up .header-up-right-half .lang-selector-wrapper .lang-selector a 
 }
 
 header .header-up .header-up-right-half .lang-selector-wrapper .lang-selector .greek-lang::before {
-  content: "|";
+  content: '|';
   padding-left: 5px;
 }
 
