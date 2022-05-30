@@ -1,6 +1,6 @@
 :root {
-  --ff-regular: 'Century Gothic Regular', sans-serif;
-  --ff-bold: 'Century Gothic Bold', sans-serif;
+  --ff-regular: "Century Gothic Regular", sans-serif;
+  --ff-bold: "Century Gothic Bold", sans-serif;
   --col-black: #000000;
   --col-white: #ffffff;
   --col-grey: #a2a2a2;
@@ -31,10 +31,28 @@ header {
   padding-inline: 100px;
   padding-bottom: 23px;
   padding-top: 20px;
+  position: relative;
 }
 
 header .submenu {
-  display: none;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  background-color: #a2a2a2;
+  width: 15%;
+}
+
+header .submenu .submenu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header-up {
@@ -139,7 +157,7 @@ header .header-up .header-up-right-half .lang-selector-wrapper .lang-selector a 
 }
 
 header .header-up .header-up-right-half .lang-selector-wrapper .lang-selector .greek-lang::before {
-  content: '|';
+  content: "|";
   padding-left: 5px;
 }
 
