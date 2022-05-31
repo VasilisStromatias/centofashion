@@ -1,6 +1,6 @@
 :root {
-  --ff-regular: 'Century Gothic Regular', sans-serif;
-  --ff-bold: 'Century Gothic Bold', sans-serif;
+  --ff-regular: "Century Gothic Regular", sans-serif;
+  --ff-bold: "Century Gothic Bold", sans-serif;
   --col-black: #000000;
   --col-white: #ffffff;
   --col-grey: #a2a2a2;
@@ -34,12 +34,6 @@ header {
   position: relative;
 }
 
-header .active {
-  left: 0 !important;
-  -webkit-transition: ease 0.6s;
-  transition: ease 0.6s;
-}
-
 header .submenu {
   display: block;
   position: absolute;
@@ -47,11 +41,18 @@ header .submenu {
   left: -20%;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
-  background-color: whitesmoke;
+  background-color: grey;
   width: 19.5%;
   height: 100vh;
-  padding-inline: 50px 23px;
+  padding-inline: 50px 60px;
   padding-block: 25px;
+  top: 153px;
+}
+
+header .submenu.active {
+  left: 0;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
 }
 
 header .submenu .submenu-list {
@@ -68,7 +69,17 @@ header .submenu .submenu-list {
   row-gap: 25px;
 }
 
+header .submenu .submenu-list .submenu-item {
+  width: 100%;
+}
+
 header .submenu .submenu-list .submenu-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: var(--col-black);
   text-transform: uppercase;
   font-family: var(--ff-bold);
@@ -77,9 +88,14 @@ header .submenu .submenu-list .submenu-item a {
 }
 
 header .submenu .submenu-list .close-icon {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  width: 100%;
   margin-block: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 header .submenu .submenu-list .close-icon span {
@@ -256,7 +272,7 @@ header .header-up .header-up-right-half .lang-selector-wrapper .lang-selector a 
 }
 
 header .header-up .header-up-right-half .lang-selector-wrapper .lang-selector .greek-lang::before {
-  content: '|';
+  content: "|";
   padding-left: 5px;
 }
 

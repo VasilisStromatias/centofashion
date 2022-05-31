@@ -89,26 +89,42 @@
       <div class="submenu">
         <ul class="submenu-list">
           <li class="submenu-item close-icon">
-            <span onclick="closeSideMenu()"></span>
+            <span class="close-icon-span" onclick="closeSideMenu()"></span>
           </li>
-          <li class="submenu-item"><a href="#">Αρχικη</a></li>
-          <li class="submenu-item"><a href="#">Νεες αφιξεις</a></li>
-          <li class="submenu-item"><a href="#">Γυναικεία</a></li>
-          <li class="submenu-item"><a href="#">Προσορές</a></li>
-          <li class="submenu-item"><a href="#">Πληροφορίες</a></li>
-          <li class="submenu-item"><a href="#">Εξυπηρέτηση Πελατών</a></li>
-          <li class="submenu-item"><a href="#">Ανδρικά</a></li>
+          <li class="submenu-item">
+            <a href="#"><span>Αρχικη</span></a>
+          </li>
+          <li class="submenu-item">
+            <a href="#"><span>Νεες αφιξεις</span></a>
+          </li>
+          <li class="submenu-item">
+            <a href="#"><span>Γυναικεία </span><span>+</span></a>
+          </li>
+          <li class="submenu-item">
+            <a href="#"><span>Προσορές </span><span>+</span></a>
+          </li>
+          <li class="submenu-item">
+            <a href="#"><span>Πληροφορίες </span><span>+</span></a>
+          </li>
+          <li class="submenu-item">
+            <a href="#"><span> Εξυπηρέτηση Πελατών</span><span>+</span></a>
+          </li>
+          <li class="submenu-item">
+            <a href="#"><span>Ανδρικά</span></a>
+          </li>
         </ul>
       </div>
       <!-- submenu -->
     </header>
     <script>
       function openSideMenu() {
-        document.querySelector('.submenu').classList.add('active');
+        document.querySelector(".submenu").classList.add("active");
+        document.querySelector(".menu-burger a span").style.opacity = "0.5";
       }
 
       function closeSideMenu() {
-        document.querySelector('.submenu').classList.remove('active');
+        document.querySelector(".submenu").classList.remove("active");
+        document.querySelector(".menu-burger a span").style.opacity = "1";
       }
     </script>
   </body>
