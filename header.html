@@ -9,113 +9,119 @@
     <title>Header</title>
   </head>
   <body>
-    <header>
-      <div class="header-up">
-        <div class="header-up-left-half">
-          <div class="logo-burger">
-            <div class="menu-burger-wrapper">
-              <div class="menu-burger">
-                <a href="#">
-                  <span onclick="openSideMenu()"></span>
-                </a>
+    <header class="header-wrapper">
+      <div class="header">
+        <div class="header-up">
+          <div class="header-up-left-half">
+            <div class="logo-burger">
+              <div class="menu-burger-wrapper">
+                <div class="menu-burger">
+                  <a href="#">
+                    <span onclick="openSideMenu()"></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="logo-wrapper">
+                <div class="logo">
+                  <a href="#"
+                    ><img src="./images/logo.png" alt="cento-logo"
+                  /></a>
+                </div>
               </div>
             </div>
+            <!-- logo-burger -->
 
-            <div class="logo-wrapper">
-              <div class="logo">
-                <a href="#"><img src="./images/logo.png" alt="cento-logo" /></a>
+            <div class="search-wrapper">
+              <div class="search">
+                <span></span>
               </div>
             </div>
           </div>
-          <!-- logo-burger -->
+          <!-- header-up-left-half -->
 
-          <div class="search-wrapper">
-            <div class="search">
-              <span></span>
+          <div class="header-up-right-half">
+            <div class="icons-wrapper">
+              <div class="header-up-right-half-wrapper">
+                <div class="face">
+                  <a href="#"><span></span></a>
+                </div>
+                <div class="heart">
+                  <a href="#"><span></span></a>
+                </div>
+                <div class="cart">
+                  <a href="#"><span></span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="lang-selector-wrapper">
+              <ul class="lang-selector">
+                <li class="english-lang">
+                  <a href="#">EN</a>
+                </li>
+                <li class="greek-lang">
+                  <a href="#"> GR </a>
+                </li>
+              </ul>
             </div>
           </div>
+          <!-- header-up-right-half -->
         </div>
-        <!-- header-up-left-half -->
+        <!-- header up -->
 
-        <div class="header-up-right-half">
-          <div class="icons-wrapper">
-            <div class="header-up-right-half-wrapper">
-              <div class="face">
-                <a href="#"><span></span></a>
-              </div>
-              <div class="heart">
-                <a href="#"><span></span></a>
-              </div>
-              <div class="cart">
-                <a href="#"><span></span></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="lang-selector-wrapper">
-            <ul class="lang-selector">
-              <li class="english-lang">
-                <a href="#">EN</a>
-              </li>
-              <li class="greek-lang">
-                <a href="#"> GR </a>
-              </li>
+        <div class="header-down">
+          <nav class="main-navigation">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#">new in</a></li>
+              <li class="nav-item"><a href="#">μπλουζες</a></li>
+              <li class="nav-item"><a href="#">φορεματα</a></li>
+              <li class="nav-item"><a href="#">παντελονια</a></li>
+              <li class="nav-item"><a href="#">πανωφορια</a></li>
+              <li class="nav-item"><a href="#">ολοσωμες φορμες</a></li>
+              <li class="nav-item"><a href="#">φουστες</a></li>
+              <li class="nav-item"><a href="#">πουκαμισα</a></li>
+              <li class="nav-item"><a href="#">αξεσουαρ+</a></li>
+              <li class="nav-item"><a href="#">προσφορες</a></li>
+              <li class="nav-item"><a href="#">outlet</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
-        <!-- header-up-right-half -->
-      </div>
-      <!-- header up -->
+        <!-- header down -->
 
-      <div class="header-down">
-        <nav class="main-navigation">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#">new in</a></li>
-            <li class="nav-item"><a href="#">μπλουζες</a></li>
-            <li class="nav-item"><a href="#">φορεματα</a></li>
-            <li class="nav-item"><a href="#">παντελονια</a></li>
-            <li class="nav-item"><a href="#">πανωφορια</a></li>
-            <li class="nav-item"><a href="#">ολοσωμες φορμες</a></li>
-            <li class="nav-item"><a href="#">φουστες</a></li>
-            <li class="nav-item"><a href="#">πουκαμισα</a></li>
-            <li class="nav-item"><a href="#">αξεσουαρ+</a></li>
-            <li class="nav-item"><a href="#">προσφορες</a></li>
-            <li class="nav-item"><a href="#">outlet</a></li>
+        <div class="submenu">
+          <ul class="submenu-list">
+            <li class="submenu-item close-icon">
+              <span class="close-icon-span" onclick="closeSideMenu()"></span>
+            </li>
+            <li class="submenu-item">
+              <a href="#"><span>Αρχικη</span></a>
+            </li>
+            <li class="submenu-item">
+              <a href="#"><span>Νεες αφιξεις</span></a>
+            </li>
+            <li class="submenu-item">
+              <a href="#"><span>Γυναικεία </span><span>+</span></a>
+            </li>
+            <li class="submenu-item">
+              <a href="#"><span>Προσορές </span><span>+</span></a>
+            </li>
+            <li class="submenu-item">
+              <a href="#"><span>Πληροφορίες </span><span>+</span></a>
+            </li>
+            <li class="submenu-item">
+              <a href="#"><span> Εξυπηρέτηση Πελατών</span><span>+</span></a>
+            </li>
+            <li class="submenu-item">
+              <a href="#"><span>Ανδρικά</span></a>
+            </li>
           </ul>
-        </nav>
+        </div>
+        <!-- submenu -->
       </div>
-      <!-- header down -->
-
-      <div class="submenu">
-        <ul class="submenu-list">
-          <li class="submenu-item close-icon">
-            <span class="close-icon-span" onclick="closeSideMenu()"></span>
-          </li>
-          <li class="submenu-item">
-            <a href="#"><span>Αρχικη</span></a>
-          </li>
-          <li class="submenu-item">
-            <a href="#"><span>Νεες αφιξεις</span></a>
-          </li>
-          <li class="submenu-item">
-            <a href="#"><span>Γυναικεία </span><span>+</span></a>
-          </li>
-          <li class="submenu-item">
-            <a href="#"><span>Προσορές </span><span>+</span></a>
-          </li>
-          <li class="submenu-item">
-            <a href="#"><span>Πληροφορίες </span><span>+</span></a>
-          </li>
-          <li class="submenu-item">
-            <a href="#"><span> Εξυπηρέτηση Πελατών</span><span>+</span></a>
-          </li>
-          <li class="submenu-item">
-            <a href="#"><span>Ανδρικά</span></a>
-          </li>
-        </ul>
-      </div>
-      <!-- submenu -->
+      <!-- header -->
     </header>
+    <!-- header-wrapper -->
     <script>
       function openSideMenu() {
         document.querySelector(".submenu").classList.add("active");
