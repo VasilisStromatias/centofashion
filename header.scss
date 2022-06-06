@@ -1,6 +1,6 @@
 :root {
-  --ff-regular: "Century Gothic Regular", sans-serif;
-  --ff-bold: "Century Gothic Bold", sans-serif;
+  --ff-regular: 'Century Gothic Regular', sans-serif;
+  --ff-bold: 'Century Gothic Bold', sans-serif;
 
   --col-black: #000000;
   --col-white: #ffffff;
@@ -108,7 +108,7 @@ a {
                 display: block;
                 height: 22px;
                 width: 30px;
-                background-image: url("./images/burger.png");
+                background-image: url('./images/burger.png');
                 background-size: contain;
                 background-repeat: no-repeat;
               }
@@ -137,7 +137,7 @@ a {
               display: block;
               height: 26px;
               width: 26px;
-              background-image: url("./images/search.png");
+              background-image: url('./images/search.png');
               background-size: contain;
               background-repeat: no-repeat;
             }
@@ -214,7 +214,7 @@ a {
               font-weight: 600;
             }
             .greek-lang::before {
-              content: "|";
+              content: '|';
               padding-left: 5px;
             }
           }
@@ -265,16 +265,23 @@ a {
         .header-up-left-half {
           flex-basis: 100%;
           .logo-burger {
-            .logo-wrapper {
-              position: absolute;
-              left: 50%;
-              transform: translateX(-50%);
+            column-gap: 0;
+            width: 100%;
+            .menu-burger-wrapper {
+              flex-basis: 30px;
             }
+            .logo-wrapper {
+              display: flex;
+              width: 100%;
+              justify-content: center;
+            }
+          }
+          .search-wrapper {
+            flex-basis: 26px;
           }
         }
 
         .header-up-right-half {
-          // box-shadow: 0px 12px 20px 10px #000000;
           box-shadow: 0px -3px 6px #00000029;
           position: fixed;
           bottom: 0;
@@ -292,6 +299,7 @@ a {
                   color: #000000;
                   span {
                     margin: 0 auto;
+                    background-position: center;
                   }
                   p {
                     margin-top: 5px;
