@@ -134,13 +134,15 @@
     <script>
       function openSideMenu() {
         // document.querySelector(".submenu").classList.add("active");
-        document.querySelector('.submenu').classList.toggle('active');
-        document.querySelector('.menu-burger a span').style.opacity = '0.5';
+        document.querySelector(".submenu").classList.toggle("active");
+        document.querySelector(".menu-burger").classList.toggle("active");
+        document.querySelector(".menu-burger a span").style.opacity = "0.5";
       }
 
       function closeSideMenu() {
-        document.querySelector('.submenu').classList.remove('active');
-        document.querySelector('.menu-burger a span').style.opacity = '1';
+        document.querySelector(".submenu").classList.remove("active");
+        document.querySelector(".menu-burger").classList.remove("active");
+        document.querySelector(".menu-burger a span").style.opacity = "1";
       }
     </script>
   </body>
