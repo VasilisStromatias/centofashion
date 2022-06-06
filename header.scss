@@ -1,6 +1,6 @@
 :root {
-  --ff-regular: "Century Gothic Regular", sans-serif;
-  --ff-bold: "Century Gothic Bold", sans-serif;
+  --ff-regular: 'Century Gothic Regular', sans-serif;
+  --ff-bold: 'Century Gothic Bold', sans-serif;
 
   --col-black: #000000;
   --col-white: #ffffff;
@@ -28,30 +28,32 @@ a {
 
 .header-wrapper {
   background-color: whitesmoke;
+  position: relative;
 
   .header {
-    margin: 0 auto;
     width: 97%;
-    position: relative;
-    padding-bottom: 23px;
-    padding-top: 17px;
-    padding-inline: 78px;
+<<<<<<< HEAD
+    padding: 17px 10px 23px;
+    max-width: 1740px;
+=======
+    padding: 17px 20px 23px;
+    max-width: 1720px;
+    margin: 0 auto;
+>>>>>>> c8ef1eb44901f9d1a1e5d8e1e397204f3e701e5e
 
     & .submenu {
       display: block;
       position: absolute;
       overflow: hidden;
-      left: -22%;
+      left: -30%;
       transition: ease-out 0.3s;
       background-color: rgb(255, 219, 219);
-      width: 19.5%;
-      height: 100vh;
-      padding-inline: 50px 60px;
-      padding-block: 25px;
-      top: 150px;
+      min-height: 500px;
+      padding: 25px 50px 25px 60px;
+      margin-top: 22px;
 
       &.active {
-        left: -28px;
+        left: 0;
         transition: ease 0.6s;
       }
       & .submenu-list {
@@ -111,7 +113,7 @@ a {
                 display: block;
                 height: 22px;
                 width: 30px;
-                background-image: url("./images/burger.png");
+                background-image: url('./images/burger.png');
                 background-size: contain;
                 background-repeat: no-repeat;
               }
@@ -140,7 +142,7 @@ a {
               display: block;
               height: 26px;
               width: 26px;
-              background-image: url("./images/search.png");
+              background-image: url('./images/search.png');
               background-size: contain;
               background-repeat: no-repeat;
             }
@@ -149,7 +151,14 @@ a {
       }
       .header-up-right-half {
         display: flex;
-        // width: 19.7%;
+<<<<<<< HEAD
+        flex-basis: 12.4%;
+        min-width: 213px;
+        justify-content: flex-end;
+
+=======
+        min-width: 207px;
+>>>>>>> c8ef1eb44901f9d1a1e5d8e1e397204f3e701e5e
         .icons-wrapper {
           display: flex;
           flex-direction: column;
@@ -159,7 +168,7 @@ a {
             display: flex;
             width: 154px;
             justify-content: space-evenly;
-            padding-inline: 5px;
+            padding-left: 5px;
             .face {
               span {
                 display: block;
@@ -168,6 +177,9 @@ a {
                 background-image: url(./images/head.png);
                 background-size: contain;
                 background-repeat: no-repeat;
+              }
+              p {
+                display: none;
               }
             }
             .heart {
@@ -179,6 +191,9 @@ a {
                 background-size: contain;
                 background-repeat: no-repeat;
               }
+              p {
+                display: none;
+              }
             }
             .cart {
               span {
@@ -188,6 +203,9 @@ a {
                 background-image: url(./images/cart.png);
                 background-size: contain;
                 background-repeat: no-repeat;
+              }
+              p {
+                display: none;
               }
             }
           }
@@ -205,7 +223,7 @@ a {
               font-weight: 600;
             }
             .greek-lang::before {
-              content: "|";
+              content: '|';
               padding-left: 5px;
             }
           }
@@ -217,20 +235,131 @@ a {
       .main-navigation {
         .nav-list {
           display: flex;
-          justify-content: space-between;
-          width: 75%;
           .nav-item {
-            margin-right: 10px;
+<<<<<<< HEAD
+            margin-right: clamp(10px, 2.5vw, 30px);
+=======
+            margin-right: 15px;
+>>>>>>> c8ef1eb44901f9d1a1e5d8e1e397204f3e701e5e
             text-align: center;
             a {
               text-transform: uppercase;
               color: #000000;
               font-family: var(--ff-bold);
-              font-size: 13px;
+<<<<<<< HEAD
+              font-size: clamp(12.64px, 1vw, 16px);
+=======
+              font-size: clamp(12.68px, 1vw, 16px);
+>>>>>>> c8ef1eb44901f9d1a1e5d8e1e397204f3e701e5e
               font-weight: 600;
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .header-wrapper {
+    .header {
+      padding: 12px 22px 18px;
+      .submenu {
+        background-color: var(--col-red);
+        margin-top: 18px;
+        width: 100%;
+        padding-inline: 43px;
+        left: -100%;
+        &.active {
+        }
+      }
+
+      .header-up {
+        padding: 0;
+
+        .header-up-left-half {
+          flex-basis: 100%;
+          .logo-burger {
+            .logo-wrapper {
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+
+        .header-up-right-half {
+          box-shadow: 0px 12px 20px 10px #000000;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100vw;
+          min-height: 68px;
+          justify-content: center;
+          .icons-wrapper {
+            .header-up-right-half-wrapper {
+              min-width: 80vw;
+              justify-content: space-between;
+              .face {
+                a {
+                  color: #000000;
+                  span {
+                    margin: 0 auto;
+                  }
+                  p {
+                    margin-top: 5px;
+                    display: block;
+                    font-family: var(--ff-bold);
+                    font-size: 9px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                  }
+                }
+              }
+              .heart {
+                a {
+                  color: #000000;
+                  span {
+                    margin: 0 auto;
+                  }
+                  p {
+                    margin-top: 5px;
+                    display: block;
+                    font-family: var(--ff-bold);
+                    font-size: 9px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                  }
+                }
+              }
+              .cart {
+                margin-left: 10px;
+                a {
+                  color: #000000;
+                  span {
+                    margin: 0 auto;
+                  }
+                  p {
+                    margin-top: 5px;
+                    display: block;
+                    font-family: var(--ff-bold);
+                    font-size: 9px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+
+          .lang-selector-wrapper {
+            display: none;
+          }
+        }
+      }
+
+      .header-down {
+        display: none;
       }
     }
   }

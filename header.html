@@ -44,13 +44,22 @@
             <div class="icons-wrapper">
               <div class="header-up-right-half-wrapper">
                 <div class="face">
-                  <a href="#"><span></span></a>
+                  <a href="#"
+                    ><span></span>
+                    <p>Λογαριασμός</p></a
+                  >
                 </div>
                 <div class="heart">
-                  <a href="#"><span></span></a>
+                  <a href="#"
+                    ><span></span>
+                    <p>Αγαπημένα</p></a
+                  >
                 </div>
                 <div class="cart">
-                  <a href="#"><span></span></a>
+                  <a href="#"
+                    ><span></span>
+                    <p>Καλάθι</p></a
+                  >
                 </div>
               </div>
             </div>
@@ -124,13 +133,14 @@
     <!-- header-wrapper -->
     <script>
       function openSideMenu() {
-        document.querySelector(".submenu").classList.add("active");
-        document.querySelector(".menu-burger a span").style.opacity = "0.5";
+        // document.querySelector(".submenu").classList.add("active");
+        document.querySelector('.submenu').classList.toggle('active');
+        document.querySelector('.menu-burger a span').style.opacity = '0.5';
       }
 
       function closeSideMenu() {
-        document.querySelector(".submenu").classList.remove("active");
-        document.querySelector(".menu-burger a span").style.opacity = "1";
+        document.querySelector('.submenu').classList.remove('active');
+        document.querySelector('.menu-burger a span').style.opacity = '1';
       }
     </script>
   </body>
