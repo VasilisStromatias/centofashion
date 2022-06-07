@@ -37,13 +37,16 @@ a {
     margin: 0 auto;
 
     & .submenu {
+      .sub-extra-content-wrapper {
+        display: none;
+      }
       display: block;
       position: absolute;
       overflow: hidden;
       left: -30%;
       transition: ease-out 0.3s;
       background-color: white;
-      min-height: 100vh;
+      // min-height: 100vh;
       min-width: 376px;
       padding: 25px 50px 25px 60px;
       margin-top: 22px;
@@ -248,7 +251,7 @@ a {
       .submenu {
         background-color: var(--col-white);
         // margin-top: 18px;
-        height: 100vh;
+        // height: 100vh;
         width: 100%;
         padding-inline: 43px;
         left: -100%;
@@ -267,6 +270,28 @@ a {
           }
         }
         &.active {
+        }
+        .sub-extra-content-wrapper {
+          display: block;
+          .sub-extra-content {
+            .customer-service-wrapper {
+              .customer-service {
+                .customer-service-icon-wrapper {
+                  .customer-service-icon {
+                    span {
+                      display: block;
+                      background-image: url(./images/tel-icon.png);
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: contain;
+                      width: 40px;
+                      height: 40px;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
 

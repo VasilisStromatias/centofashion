@@ -46,10 +46,13 @@ a {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
   background-color: white;
-  min-height: 100vh;
   min-width: 376px;
   padding: 25px 50px 25px 60px;
   margin-top: 22px;
+}
+
+.header-wrapper .header .submenu .sub-extra-content-wrapper {
+  display: none;
 }
 
 .header-wrapper .header .submenu.active {
@@ -310,7 +313,6 @@ a {
   }
   .header-wrapper .header .submenu {
     background-color: var(--col-white);
-    height: 100vh;
     width: 100%;
     padding-inline: 43px;
     left: -100%;
@@ -326,6 +328,18 @@ a {
   }
   .header-wrapper .header .submenu .submenu-list .submenu-item.box {
     background-color: var(--col-grey-light);
+  }
+  .header-wrapper .header .submenu .sub-extra-content-wrapper {
+    display: block;
+  }
+  .header-wrapper .header .submenu .sub-extra-content-wrapper .sub-extra-content .customer-service-wrapper .customer-service .customer-service-icon-wrapper .customer-service-icon span {
+    display: block;
+    background-image: url(./images/tel-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
   }
   .header-wrapper .header .header-up {
     padding: 0;
