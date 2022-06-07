@@ -1,12 +1,12 @@
 :root {
-  --ff-regular: 'Century Gothic Regular', sans-serif;
-  --ff-bold: 'Century Gothic Bold', sans-serif;
+  --ff-regular: "Century Gothic Regular", sans-serif;
+  --ff-bold: "Century Gothic Bold", sans-serif;
 
   --col-black: #000000;
   --col-white: #ffffff;
   --col-grey: #a2a2a2;
   --col-grey-med: #b8b8b8;
-  --col-grey-light: #f9f9f9;
+  --col-grey-light: #ededed;
   --col-red: #df0017;
 }
 
@@ -27,7 +27,7 @@ a {
 }
 
 .header-wrapper {
-  background-color: whitesmoke;
+  background-color: white;
   position: relative;
 
   .header {
@@ -42,39 +42,36 @@ a {
       overflow: hidden;
       left: -30%;
       transition: ease-out 0.3s;
-      background-color: rgb(255, 219, 219);
-      min-height: 500px;
+      background-color: white;
+      min-height: 100vh;
+      min-width: 376px;
       padding: 25px 50px 25px 60px;
       margin-top: 22px;
 
       &.active {
-        left: 0;
+        left: 0px;
         transition: ease 0.6s;
       }
       & .submenu-list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        row-gap: 25px;
+        width: 100%;
+
         .submenu-item {
           width: 100%;
+          padding-block: 13px;
           a {
             display: flex;
             justify-content: space-between;
             color: var(--col-black);
             text-transform: uppercase;
             font-family: var(--ff-bold);
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
             span {
             }
           }
         }
         .close-icon {
-          width: 100%;
-          margin-block: 10px;
-          display: flex;
-          justify-content: end;
+          padding: 0 0 35px 100%;
           span {
             cursor: pointer;
             display: block;
@@ -108,7 +105,7 @@ a {
                 display: block;
                 height: 22px;
                 width: 30px;
-                background-image: url('./images/burger.png');
+                background-image: url("./images/burger.png");
                 background-size: contain;
                 background-repeat: no-repeat;
               }
@@ -137,7 +134,7 @@ a {
               display: block;
               height: 26px;
               width: 26px;
-              background-image: url('./images/search.png');
+              background-image: url("./images/search.png");
               background-size: contain;
               background-repeat: no-repeat;
             }
@@ -214,7 +211,7 @@ a {
               font-weight: 600;
             }
             .greek-lang::before {
-              content: '|';
+              content: "|";
               padding-left: 5px;
             }
           }
@@ -249,12 +246,26 @@ a {
     .header {
       padding: 12px 22px 18px;
       .submenu {
-        background-color: var(--col-grey);
+        background-color: var(--col-white);
         margin-top: 18px;
         height: 100vh;
         width: 100%;
         padding-inline: 43px;
         left: -100%;
+        .submenu-list {
+          max-width: 550px;
+          margin: 0 auto;
+          .submenu-item {
+            padding-block: 12px;
+            padding-inline: 20px;
+            margin-block: 7px;
+            &.box {
+              background-color: var(--col-grey-light);
+            }
+            a {
+            }
+          }
+        }
         &.active {
         }
       }
