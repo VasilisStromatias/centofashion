@@ -1,6 +1,6 @@
 :root {
-  --ff-regular: "Century Gothic Regular", sans-serif;
-  --ff-bold: "Century Gothic Bold", sans-serif;
+  --ff-regular: 'Century Gothic Regular', sans-serif;
+  --ff-bold: 'Century Gothic Bold', sans-serif;
   --col-black: #000000;
   --col-white: #ffffff;
   --col-grey: #a2a2a2;
@@ -84,6 +84,16 @@ a {
   font-weight: 600;
 }
 
+.header-wrapper .header .submenu .submenu-list .submenu-item a .plus-icon {
+  background-image: url(./images/plus-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+
 .header-wrapper .header .submenu .submenu-list .close-icon {
   padding: 0 0 35px 100%;
 }
@@ -96,6 +106,14 @@ a {
   background-size: contain;
   width: 10px;
   height: 10px;
+}
+
+.header-wrapper .header .submenu .submenu-list .women .women-submenu-wrapper {
+  display: none;
+}
+
+.header-wrapper .header .submenu .submenu-list .women .women-submenu-wrapper.women-active {
+  display: block;
 }
 
 .header-wrapper .header .header-up {
@@ -284,7 +302,7 @@ a {
 }
 
 .header-wrapper .header .header-up .header-up-right-half .lang-selector-wrapper .lang-selector .greek-lang::before {
-  content: "|";
+  content: '|';
   padding-left: 5px;
 }
 
@@ -384,14 +402,20 @@ a {
     margin-block: 18px;
   }
   .header-wrapper .header .submenu .sub-extra-content-wrapper .sub-extra-content .social-media-wrapper .social-media {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .header-wrapper .header .submenu .sub-extra-content-wrapper .sub-extra-content .social-media-wrapper .social-media span:nth-of-type(1) {
+  .header-wrapper .header .submenu .sub-extra-content-wrapper .sub-extra-content .social-media-wrapper .social-media .join-us {
     font-size: 12px;
     font-family: var(--ff-regular);
     text-transform: uppercase;
+    min-width: 61px;
   }
-  .header-wrapper .header .submenu .sub-extra-content-wrapper .sub-extra-content .social-media-wrapper .social-media span:nth-of-type(2) {
+  .header-wrapper .header .submenu .sub-extra-content-wrapper .sub-extra-content .social-media-wrapper .social-media .fb-link span {
     display: block;
     background-image: url(./images/fb.png);
     background-position: center;
@@ -399,8 +423,9 @@ a {
     background-repeat: no-repeat;
     width: 7px;
     height: 16px;
+    margin-right: 15px;
   }
-  .header-wrapper .header .submenu .sub-extra-content-wrapper .sub-extra-content .social-media-wrapper .social-media span:nth-of-type(3) {
+  .header-wrapper .header .submenu .sub-extra-content-wrapper .sub-extra-content .social-media-wrapper .social-media .insta-link span {
     display: block;
     background-image: url(./images/insta.png);
     background-position: center;

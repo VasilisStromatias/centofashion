@@ -109,20 +109,32 @@
             <li class="submenu-item box">
               <a href="#"><span>Νεες αφιξεις</span></a>
             </li>
-            <li class="submenu-item box">
-              <a href="#"><span>Γυναικεία </span><span>+</span></a>
+            <li class="submenu-item box women">
+              <a href="#" class="women-link" onclick="openWomenSubMenu()"
+                ><span>Γυναικεία </span><span class="plus-icon"></span>
+              </a>
+              <ul class="women-submenu-wrapper">
+                <li class="women-submenu-items">One Item</li>
+                <li class="women-submenu-items">Two Items</li>
+              </ul>
             </li>
             <li class="submenu-item box">
-              <a href="#"><span>Προσφορές </span><span>+</span></a>
+              <a href="#"
+                ><span>Προσφορές </span><span class="plus-icon"></span
+              ></a>
             </li>
             <li class="submenu-item box">
               <a href="#"><span>Ανδρικά</span></a>
             </li>
             <li class="submenu-item">
-              <a href="#"><span>Πληροφορίες </span><span>+</span></a>
+              <a href="#"
+                ><span>Πληροφορίες </span><span class="plus-icon"></span
+              ></a>
             </li>
             <li class="submenu-item">
-              <a href="#"><span> Εξυπηρέτηση Πελατών</span><span>+</span></a>
+              <a href="#"
+                ><span> Εξυπηρέτηση Πελατών</span><span class="plus-icon"></span
+              ></a>
             </li>
             <li class="submenu-item">
               <a href="#"><span>Περισσότερα</span></a>
@@ -146,9 +158,9 @@
               <div class="line"><span></span></div>
               <div class="social-media-wrapper">
                 <div class="social-media">
-                  <span>Join us!</span>
-                  <span></span>
-                  <span></span>
+                  <span class="join-us">Join us!</span>
+                  <a href="#" class="fb-link"><span></span></a>
+                  <a href="#" class="insta-link"><span></span></a>
                 </div>
               </div>
             </div>
@@ -160,17 +172,33 @@
     </header>
     <!-- header-wrapper -->
     <script>
+      function openWomenSubMenu() {
+        const womenLink = document.querySelector('.women-link');
+        const womenSubmenuWrapper = document.querySelector(
+          '.women-submenu-wrapper'
+        );
+        const womenPlusIcon = document.querySelector('.plus-icon');
+
+        womenSubmenuWrapper.classList.toggle('women-active');
+
+        if (womenSubmenuWrapper.classList.contains('.women-active')) {
+          womenPlusIcon.style.transform = 'rotate(45deg)';
+          console.log('has active class');
+        } else {
+          womenPlusIcon.style.transform = 'rotate(0deg)';
+          console.log('NO active class');
+        }
+      }
+
       function openSideMenu() {
-        // document.querySelector(".submenu").classList.add("active");
-        document.querySelector(".submenu").classList.toggle("active");
-        document.querySelector(".menu-burger").classList.toggle("active");
-        document.querySelector(".menu-burger a span").style.opacity = "0.5";
+        document.querySelector('.submenu').classList.toggle('active');
+        document.querySelector('.menu-burger a span').style.opacity = '0.5';
       }
 
       function closeSideMenu() {
-        document.querySelector(".submenu").classList.remove("active");
-        document.querySelector(".menu-burger").classList.remove("active");
-        document.querySelector(".menu-burger a span").style.opacity = "1";
+        document.querySelector('.submenu').classList.remove('active');
+        document.querySelector('.menu-burger').classList.remove('active');
+        document.querySelector('.menu-burger a span').style.opacity = '1';
       }
     </script>
   </body>
