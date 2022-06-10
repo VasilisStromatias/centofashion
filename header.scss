@@ -46,7 +46,6 @@ a {
       left: -30%;
       transition: ease-out 0.3s;
       background-color: white;
-      // min-height: 100vh;
       min-width: 376px;
       padding: 25px 50px 25px 60px;
       margin-top: 22px;
@@ -269,8 +268,6 @@ a {
       padding: 12px 22px 18px;
       .submenu {
         background-color: var(--col-white);
-        // margin-top: 18px;
-        // height: 100vh;
         width: 100%;
         padding-inline: 43px;
         left: -100%;
@@ -284,8 +281,6 @@ a {
             &.box {
               background-color: var(--col-grey-light);
             }
-            a {
-            }
           }
         }
         &.active {
@@ -298,7 +293,6 @@ a {
           .sub-extra-content {
             .customer-service-wrapper {
               padding-inline: 17px;
-
               .customer-service {
                 .customer-service-icon-wrapper {
                   display: flex;
@@ -384,98 +378,95 @@ a {
           }
         }
       }
-    }
-
-    .header-up {
-      padding: 0;
-
-      .header-up-left-half {
-        flex-basis: 100%;
-        .logo-burger {
-          column-gap: 0;
-          width: 100%;
-          .menu-burger-wrapper {
-            flex-basis: 30px;
-          }
-          .logo-wrapper {
-            display: flex;
+      .header-up {
+        padding: 0;
+        .header-up-left-half {
+          flex-basis: 100%;
+          .logo-burger {
+            column-gap: 0;
             width: 100%;
-            justify-content: center;
+            .menu-burger-wrapper {
+              flex-basis: 30px;
+            }
+            .logo-wrapper {
+              display: flex;
+              width: 100%;
+              justify-content: center;
+            }
           }
-        }
-        .search-wrapper {
-          flex-basis: 26px;
-        }
-      }
-
-      .header-up-right-half {
-        box-shadow: 0px -3px 6px #00000029;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        min-height: 68px;
-        justify-content: center;
-        .icons-wrapper {
-          .header-up-right-half-wrapper {
-            min-width: 80vw;
-            justify-content: space-between;
-            padding: 0;
-            .face {
-              a {
-                color: #000000;
-                span {
-                  margin: 0 auto;
-                  background-position: center;
-                }
-                p {
-                  margin-top: 5px;
-                  display: block;
-                  font-family: var(--ff-bold);
-                  font-size: 9px;
-                  text-transform: uppercase;
-                  font-weight: 600;
-                }
-              }
-            }
-            .heart {
-              a {
-                color: #000000;
-                span {
-                  margin: 0 auto;
-                }
-                p {
-                  margin-top: 5px;
-                  display: block;
-                  font-family: var(--ff-bold);
-                  font-size: 9px;
-                  text-transform: uppercase;
-                  font-weight: 600;
-                }
-              }
-            }
-            .cart {
-              margin-left: 10px;
-              a {
-                color: #000000;
-                span {
-                  margin: 0 auto;
-                }
-                p {
-                  margin-top: 5px;
-                  display: block;
-                  font-family: var(--ff-bold);
-                  font-size: 9px;
-                  text-transform: uppercase;
-                  font-weight: 600;
-                }
-              }
-            }
+          .search-wrapper {
+            flex-basis: 26px;
           }
         }
 
-        .lang-selector-wrapper {
-          display: none;
+        .header-up-right-half {
+          box-shadow: 0px -3px 6px #00000029;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100vw;
+          min-height: 68px;
+          justify-content: center;
+          .lang-selector-wrapper {
+            display: none;
+          }
+          .icons-wrapper {
+            .header-up-right-half-wrapper {
+              min-width: 80vw;
+              justify-content: space-between;
+              padding: 0;
+              .face {
+                a {
+                  color: #000000;
+                  span {
+                    margin: 0 auto;
+                    background-position: center;
+                  }
+                  p {
+                    margin-top: 5px;
+                    display: block;
+                    font-family: var(--ff-bold);
+                    font-size: 9px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                  }
+                }
+              }
+              .heart {
+                a {
+                  color: #000000;
+                  span {
+                    margin: 0 auto;
+                  }
+                  p {
+                    margin-top: 5px;
+                    display: block;
+                    font-family: var(--ff-bold);
+                    font-size: 9px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                  }
+                }
+              }
+              .cart {
+                margin-left: 10px;
+                a {
+                  color: #000000;
+                  span {
+                    margin: 0 auto;
+                  }
+                  p {
+                    margin-top: 5px;
+                    display: block;
+                    font-family: var(--ff-bold);
+                    font-size: 9px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
