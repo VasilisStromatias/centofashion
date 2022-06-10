@@ -110,7 +110,10 @@
               <a href="#"><span>Νεες αφιξεις</span></a>
             </li>
             <li class="submenu-item box women">
-              <a href="#" class="women-link" onclick="openWomenSubMenu();"
+              <a
+                href="javascript:void(0)"
+                class="women-link"
+                onclick="openWomenSubMenu();"
                 ><span>Γυναικεία </span
                 ><span class="plus-icon" id="w_plus_icon"></span>
               </a>
@@ -174,26 +177,26 @@
     <!-- header-wrapper -->
     <script>
       function openWomenSubMenu() {
-        const womenLink = document.querySelector(".women-link");
+        const womenLink = document.querySelector('.women-link');
         const womenSubmenuWrapper = document.querySelector(
-          ".women-submenu-wrapper"
+          '.women-submenu-wrapper'
         );
-        const womenPlusIcon = document.querySelector("#w_plus_icon");
+        const womenPlusIcon = document.querySelector('#w_plus_icon');
         let isOpen = false;
 
-        womenSubmenuWrapper.classList.toggle("women-active");
-        console.log("women-active added");
+        womenSubmenuWrapper.classList.toggle('women-active');
+        console.log('women-active added');
         isOpen = true;
       }
 
       function openSideMenu() {
-        document.querySelector(".submenu").classList.toggle("active");
-        document.querySelector(".menu-burger a span").style.opacity = "0.5";
+        document.querySelector('.submenu').classList.toggle('active');
+        document.querySelector('.menu-burger a span').style.opacity = '0.5';
       }
 
       function closeSideMenu() {
-        document.querySelector(".submenu").classList.remove("active");
-        document.querySelector(".menu-burger a span").style.opacity = "1";
+        document.querySelector('.submenu').classList.remove('active');
+        document.querySelector('.menu-burger a span').style.opacity = '1';
       }
     </script>
   </body>

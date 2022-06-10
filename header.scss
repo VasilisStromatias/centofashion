@@ -1,6 +1,6 @@
 :root {
-  --ff-regular: "Century Gothic Regular", sans-serif;
-  --ff-bold: "Century Gothic Bold", sans-serif;
+  --ff-regular: 'Century Gothic Regular', sans-serif;
+  --ff-bold: 'Century Gothic Bold', sans-serif;
 
   --col-black: #000000;
   --col-white: #ffffff;
@@ -71,6 +71,7 @@ a {
             span {
             }
             .plus-icon {
+              align-self: center;
               background-image: url(./images/plus-icon.png);
               background-repeat: no-repeat;
               background-position: center;
@@ -127,7 +128,7 @@ a {
                 display: block;
                 height: 22px;
                 width: 30px;
-                background-image: url("./images/burger.png");
+                background-image: url('./images/burger.png');
                 background-size: contain;
                 background-repeat: no-repeat;
               }
@@ -156,7 +157,7 @@ a {
               display: block;
               height: 26px;
               width: 26px;
-              background-image: url("./images/search.png");
+              background-image: url('./images/search.png');
               background-size: contain;
               background-repeat: no-repeat;
             }
@@ -233,7 +234,7 @@ a {
               font-weight: 600;
             }
             .greek-lang::before {
-              content: "|";
+              content: '|';
               padding-left: 5px;
             }
           }
