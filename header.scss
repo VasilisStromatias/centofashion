@@ -43,7 +43,7 @@ a {
       display: block;
       position: absolute;
       overflow: hidden;
-      left: -30%;
+      left: -40%;
       transition: ease-out 0.3s;
       background-color: white;
       min-width: 376px;
@@ -60,7 +60,7 @@ a {
         .submenu-item {
           width: 100%;
           padding-block: 13px;
-          a {
+          .submenu-link {
             display: flex;
             justify-content: space-between;
             color: var(--col-black);
@@ -84,7 +84,7 @@ a {
           }
         }
         .close-icon {
-          padding: 0 0 35px 100%;
+          padding: 0 0 15px 100%;
           span {
             cursor: pointer;
             display: block;
@@ -99,6 +99,30 @@ a {
         .women {
           .women-submenu-wrapper {
             display: none;
+            width: 100%;
+            .women-submenu-items {
+              padding-inline: 20px 10px;
+              margin-block: 10px;
+            }
+            .women-submenu-link {
+              color: black;
+              font-family: var(--ff-regular);
+              font-size: 15px;
+              &.hidden-desktop {
+                display: none;
+              }
+              &.hidden-mobile {
+                display: block;
+              }
+              &.bold {
+                font-family: var(--ff-bold);
+                font-weight: 600;
+              }
+            }
+            &.women-submenu-wrapper-desktop {
+              max-width: 193px;
+              margin: 0 auto;
+            }
 
             &.women-active {
               display: block;
@@ -275,6 +299,33 @@ a {
         .submenu-list {
           max-width: 550px;
           margin: 0 auto;
+          .women {
+            .women-submenu-wrapper {
+              padding: 0;
+              margin: 0;
+              .women-submenu-items {
+                padding: 0;
+                margin-block: 20px;
+                .women-submenu-link {
+                  margin-block: 10px;
+                }
+              }
+              .women-submenu-link {
+                &.hidden-mobile {
+                  display: none;
+                }
+                &.hidden-desktop {
+                  display: block;
+                }
+              }
+              &.women-submenu-wrapper-desktop {
+              }
+
+              &.women-active {
+                margin: 0;
+              }
+            }
+          }
           .submenu-item {
             padding-block: 12px;
             padding-inline: 20px;
