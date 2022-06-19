@@ -185,15 +185,14 @@
             </li>
             <li class="submenu-item box sales">
               <a
-                href="#"
                 href="javascript:void(0)"
                 class="submenu-link"
-                onclick="openWomenSubMenu();"
+                onclick="openSalesSubMenu();"
                 ><span>Προσφορές </span
                 ><span class="plus-icon" id="w_plus_icon"></span
               ></a>
               <!-- NEW START -->
-              <!-- <ul class="s-submenu-wrapper s-submenu-wrapper-desktop">
+              <ul class="s-submenu-wrapper s-submenu-wrapper-desktop">
                 <li class="s-submenu-items">
                   <a href="#" class="s-submenu-link bold hidden-mobile"
                     >ΕΝΔΥΣΗ</a
@@ -211,7 +210,7 @@
                 <li class="s-submenu-items">
                   <a href="#" class="s-submenu-link">ΠΑΝΩΦΟΡΙΑ</a>
                 </li>
-              </ul> -->
+              </ul>
               <!-- NEW END -->
             </li>
             <li class="submenu-item box">
@@ -264,26 +263,27 @@
     <!-- header-wrapper -->
     <script>
       function openWomenSubMenu() {
-        const sSubmenuWrapper = document.querySelector(".s-submenu-wrapper");
-        const women = document.querySelector(".women");
-        const sales = document.querySelector(".sales");
-        const womenPlusIcon = document.querySelector("#w_plus_icon");
-        let isOpen = false;
+        const women = document.querySelector('.women');
 
-        women.lastElementChild.classList.toggle("s-active");
-        sales.lastElementChild.classList.toggle("s-active");
-        console.log("s-active added");
-        isOpen = true;
+        women.lastElementChild.classList.toggle('s-active');
+        console.log('s-active women added');
+      }
+
+      function openSalesSubMenu() {
+        const sales = document.querySelector('.sales');
+
+        sales.lastElementChild.classList.toggle('s-active');
+        console.log('s-active sales added');
       }
 
       function openSideMenu() {
-        document.querySelector(".submenu").classList.toggle("active");
-        document.querySelector(".menu-burger a span").style.opacity = "0.5";
+        document.querySelector('.submenu').classList.toggle('active');
+        document.querySelector('.menu-burger a span').style.opacity = '0.5';
       }
 
       function closeSideMenu() {
-        document.querySelector(".submenu").classList.remove("active");
-        document.querySelector(".menu-burger a span").style.opacity = "1";
+        document.querySelector('.submenu').classList.remove('active');
+        document.querySelector('.menu-burger a span').style.opacity = '1';
       }
     </script>
   </body>
